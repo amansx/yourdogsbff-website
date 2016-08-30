@@ -1,0 +1,245 @@
+/*
+*  @Author	: Amanpreet Singh
+*  @Email 	: amanpreet.dev@gmail.com
+*/
+
+@font-face {
+	font-family: 'opensans';
+	src: url('../fonts/OpenSans-Light.ttf')  format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'opensans';
+	src: url('../fonts/OpenSans-Semibold.ttf')  format('truetype');
+	font-weight: 100;
+}
+
+.container-main{
+	font-family: opensans, Arial;
+	letter-spacing: 1px;
+}
+
+.container-main .hero{
+	width: 100%; height: 500px;
+	background: url('../images/hero.jpg') no-repeat center center;
+}
+
+.container-main .hero nav{
+	width: 100%;
+	padding: 15px 0 15px 30px;
+	position: fixed;
+	font-size: 19px;
+	font-style: italic;
+	background: rgba(0,0,0,0.85);
+	z-index: 10;
+	color: white;
+}
+.container-main .hero nav a{
+	text-decoration: none;
+	color: white;
+}
+
+.container-main .hero .hero-content{
+	width: 100%;
+	padding-top: 320px; 
+	text-align: center;
+	color: white;
+
+	font-size: 25px;
+	line-height: 35px;	
+}
+
+.container-main .hero .hero-content .small{
+	font-size: 18px;
+}
+
+.container-main .hero .hero-content strong{
+	font-size: 40px;
+}
+
+.container-main .hero .hero-content button{
+	border: none;
+	background: green;
+	padding: 10px 20px 10px 20px;
+	margin-top: 10px;
+	font-size: 17px;
+	border-radius: 5px;
+	color: white;
+}
+
+.container-main section article{	
+	width: 100%;
+	max-width: 900px;
+	display: block;
+	margin: 0 auto;
+	box-sizing: border-box;	
+}
+
+.container-main section{
+	padding-bottom: 50px;
+}
+.container-main section::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.container-main section article h2{
+	text-transform: uppercase;
+	padding: 50px 0 50px 0;
+	color: #494a5e;
+	padding-left: 200px;
+	font-size: 28px;
+	text-align: left;
+}
+
+.container-main section article .section-image.image-a{
+	background: url('../images/image1.png') no-repeat center center;
+}
+.container-main section article .section-image.image-b{
+	background: url('../images/image2.png') no-repeat center center;
+}
+.container-main section article .section-image.image-c{
+	background: url('../images/image3.png') no-repeat center center;
+}
+
+.container-main section article .map-image{
+	width: 100%;
+	display: inline-block;
+	margin-top: 30px;
+}
+.container-main section article .map-image img{
+	width: 100%;
+	max-width: 277px;
+}
+
+.container-main section article .section-image{
+	float: left;
+	width: 150px;
+	height: 150px;
+
+    shape-outside: circle(50%) border-box;
+    -webkit-clip-path: circle(50%);
+    shape-margin: 20px;
+    border-radius: 150px;
+
+	background-color: black;
+	background-size: 100% auto !important;
+}
+
+.container-main section article p{
+	width: calc(100% - 200px);
+	position: relative;
+	font-size: 14px;
+	top: -10px;
+	float: right;
+	text-align: left;
+	line-height: 30px;
+	box-sizing: border-box;
+}
+
+.container-main section article p strong{
+	font-weight: 100;
+}
+
+.container-main section article h3{
+	padding: 30px 0 30px 0;
+	text-align: center;
+	color: #494a5e;
+}
+
+.container-main section:nth-child(2n+1){
+	background: #363636;
+}
+
+.container-main section:nth-child(2n+1) article h2{
+	color: #c2c2c2;
+	padding-right: 200px;
+	padding-left: 0;
+	text-align: right;
+}
+
+.container-main section:nth-child(2n+1) article .section-image{
+	float: right;
+}
+
+.container-main section:nth-child(2n+1) article p{
+	color: #c2c2c2;
+	width: calc(100% - 200px);
+	float: left;
+	text-align: right;
+}
+
+.container-main section article h3{
+	padding: 30px 10px 30px 10px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.container-main section:nth-child(2n+1) article h3{
+	color: #c2c2c2;
+}
+
+@media all and (max-width:500px){
+
+	.container-main section article{ 
+		padding: 0 20px 0 20px;
+	}
+	
+	.container-main section article h2{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		text-align: left !important;
+	}
+
+	.container-main section article p{ 
+		float: none !important; 
+		width: 100% !important;
+		text-align: justify !important;
+	}
+
+	.container-main section article .section-image{ 
+		display: inline-block;		
+		margin: 0 20px 20px 0;
+		float: left !important;
+	}
+
+	.container-main section article .map-image img{
+		max-width: 100%;
+	}
+
+}
+
+
+@media all and (min-width:501px){
+	.container-main section article p{
+		padding-left: 0;
+		padding-right: 20px;
+	}
+	.container-main section:nth-child(2n+1) article p{
+		padding-right: 0;
+		padding-left: 20px;
+	}
+
+	.container-main section article .section-image{ 
+		margin-left: 25px;
+		margin-right: 0;
+	}
+	.container-main section:nth-child(2n+1) article .section-image{ 
+		margin-left: 0;
+		margin-right: 25px;
+	}
+
+}
+
+@media all and (min-width:1000px){
+	.container-main section article p{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}	
+	.container-main section article .section-image{ 
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+}
